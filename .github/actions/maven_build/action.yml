@@ -1,0 +1,9 @@
+name: maven_build
+author: ctw04439
+description: maven_build
+runs:
+  using: "composite"
+  steps:
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+      shell: bash
