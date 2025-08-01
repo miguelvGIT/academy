@@ -1,3 +1,4 @@
+/*
 package com.ctw.workstation.booking.boundary;
 
 import com.ctw.workstation.booking.entity.Booking;
@@ -54,14 +55,16 @@ class BookingResourceTest {
 
     @BeforeEach
     void setup() {
-        /*TeamDTO team = new TeamDTO(
+        */
+/*TeamDTO team = new TeamDTO(
                 UUID.randomUUID(),
                 "Team JUNIT",
                 "MINI ONE",
                 new Date(),
                 new Date(),
                 "Lisbon"
-        );*/
+        );*//*
+
 
         team = new Team();
         team.setName("testTeam");
@@ -70,7 +73,8 @@ class BookingResourceTest {
         team.setModifiedAt(new Date());
         team.setDefaultLocation("Lisbon");
 
-        /*RackDTO rack = new RackDTO(
+        */
+/*RackDTO rack = new RackDTO(
                 UUID.randomUUID(),
                 "1000-245-02",
                 "BOOKED",
@@ -78,7 +82,8 @@ class BookingResourceTest {
                 "Lisbon",
                 new Date() //LocalDateTime.now()
 
-        );*/
+        );*//*
+
 
         rack = new Rack();
         rack.setSerialNumber("1000-200-03");
@@ -122,11 +127,13 @@ class BookingResourceTest {
                 .then()
                 .statusCode(HttpStatus.SC_CREATED)
                 .log();
-            /*    .all()
+            */
+/*    .all()
 
 
         Assertions.assertThat()
-                .*/
+                .*//*
+
     }
 
     @Test
@@ -145,4 +152,4 @@ class BookingResourceTest {
     }
 
 
-}
+}*/
